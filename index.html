@@ -1,109 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Qubit – Nigeria’s Cheapest Data Deals</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>Welcome to Qubit</h1>
-    <p>We help Nigerians access the cheapest daily data deals using switching technology and local sourcing. Save money, get fast internet, and control your spending.</p>
-    <a href="https://wa.me/2347039625148" class="cta-button">Order on WhatsApp</a>
-  </header>
-
-  <section class="deal-section">
-    <h2>Today’s Hot Deal</h2>
-    <p><strong>MTN 2GB for ₦300</strong> – Cheaper than MTN SME or official plans.</p>
-    <p>Powered by smart switching and local partner networks. Available to VIP users only.</p>
-  </section>
-
-  <section class="payment">
-    <h2>Join VIP to Access Deals</h2>
-    <p>Join Qubit VIP Club with just ₦100 to unlock access to our switching tech and low-cost data system.</p>
-    <a href="https://flutterwave.com/pay/puqj4g12a86j" class="pay-button">Pay ₦100 to Join VIP</a>
-  </section>
-
-  <section class="forms">
-    <h2>Useful Forms</h2>
-    <ul>
-      <li>
-        <a href="https://forms.gle/QmSaK4d88QQjDz2M9" target="_blank">Qubit VIP Club Signup</a>
-        <p>Get exclusive data prices and updates daily after payment. This is your first step into Qubit.</p>
-      </li>
-      <li>
-        <a href="https://forms.gle/dbzhjXJXivYXiyfD8" target="_blank">Referral / Agent Application</a>
-        <p>Earn ₦50–₦200 per referral. Agents get bonus data, special rates, and promo codes.</p>
-      </li>
-      <li>
-        <a href="https://forms.gle/8SGikcvSW2Z32Xfq8" target="_blank">Manual Switching Request</a>
-        <p>If your line is not eligible for the current network deal, request a switch to another SIM or service.</p>
-      </li>
-      <li>
-        <a href="https://forms.gle/XMBQ4Egj2FxQWFLn6" target="_blank">User Feedback / Testimony</a>
-        <p>Tell us how Qubit has helped you save money or improved your internet experience.</p>
-      </li>
-      <li>
-        <a href="https://forms.gle/YLMuCLiQjnbnzdWB8" target="_blank">Customer Support / Issues</a>
-        <p>Use this if you didn't receive your data or you have any issue with your payment or order.</p>
-      </li>
-    </ul>
-  </section>
-
-  <section class="fake-buttons">
-    <h2>Coming Soon Features</h2>
-    <button onclick="alert('Auto-Switching coming soon! Join the waitlist.')">Auto Switch Network</button>
-    <button onclick="alert('Wallet system is coming soon!')">Recharge Wallet</button>
-    <button onclick="alert('Agent dashboard is under development.')">Agent Dashboard</button>
-    <button onclick="alert('Bulk SME Platform in beta.')">Buy Bulk Data</button>
-  </section>
-
-  <section class="images">
-    <h2>How It Works</h2>
-    <img src="images/cheap-data-deal.png" alt="Data saving promo" />
-    <img src="images/whatsapp-order-demo.png" alt="WhatsApp order demo" />
-  </section>
-
-  <section class="faq">
-    <h2>Frequently Asked Questions (FAQ)</h2>
-    <div class="faq-item">
-      <h3>How does Qubit work?</h3>
-      <p>Qubit finds the cheapest data network daily using SIM switching. We then share this network with our VIPs to buy at the cheapest rate.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Is it legal?</h3>
-      <p>Yes. We source data using publicly available SME and gifting plans and automate switching to give better deals than big telcos.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Why pay ₦100?</h3>
-      <p>This gives you access to our data network engine and helps us reduce fraud. It also registers you to get daily updates.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Can I resell Qubit data?</h3>
-      <p>Yes. You can apply as an agent and earn by referring others or selling data with markup. We support bulk resellers too.</p>
-    </div>
-  </section>
-
-  <section class="chatbot">
-    <button class="chatbot-btn" onclick="toggleChat()">Need Help? Chat with Qubit AI</button>
-    <div id="chat-popup" class="chatbox hidden">
-      <p><strong>Qubit AI (Beta):</strong></p>
-      <p>Hello! I can help answer common questions. Type your question below.</p>
-      <input type="text" placeholder="Type your message..." />
-      <button onclick="alert('Qubit AI is still learning. Try WhatsApp instead.')">Send</button>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Qubit. All rights reserved. Built by Livinus and Team Qubit.</p>
-  </footer>
-
-  <script>
-    function toggleChat() {
-      const chat = document.getElementById('chat-popup');
-      chat.classList.toggle('hidden');
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qubit | Nigeria’s Cheapest Data Deals</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
     }
-  </script>
-</body>
-</html>
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #6e40c9;
+    }
+    .cta-buttons, .form-links, .image-section {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .cta-buttons a, .form-links a {
+      flex: 1;
+      padding: 15px;
+      background: #6e40c9;
+      color: #fff;
+      text-align: center;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .cta-buttons a i, .form-links a i {
+      margin-right: 8px;
+    }
+    .faq, .countdown, .counter, .trust-badges {
+      margin-top: 30px;
+    }
+    .trust-badges {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin: 10px 0 25px;
+      flex-wrap: wrap;
+    }
+    .trust-badges span {
+      background: #f8f9fa;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+      color: #6e40c9;
+    }
+    .image-section img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .faq ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .faq li {
+      margin-bottom: 10px;
+      background: #fff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head><body>
+  <div class="container">
+    <h1>Qubit: Slash Your Data Costs Today</h1>
+    <div class="trust-badges">
+      <span><i class="fas fa-shield-alt"></i> 100% Secure</span>
+      <span><i class="fas fa-bolt"></i> Instant Delivery</span>
+      <span><i class="fas fa-headset"></i> Lagos-Based Support</span>
+    </div><div class="image-section">
+  <img src="cheap-data-deal.png" alt="Cheap Data Deal">
+</div>
+
+<div class="cta-buttons">
+  <a href="https://wa.me/2347039625148" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+  <a href="https://flutterwave.com/pay/puqj4g12a86j" target="_blank"><i class="fas fa-credit-card"></i> Pay with Flutterwave</a>
+</div>
+
+<div class="image-section">
+  <img src="whatsapp-order-demo.png" alt="WhatsApp Order Demo">
+</div>
+
+<div class="form-links">
+  <a href="https://forms.gle/QmSaK4d88QQjDz2M9" target="_blank"><i class="fas fa-user-plus"></i> Join Qubit VIP Club<br><small>Unlock exclusive savings</small></a>
+  <a href="https://forms.gle/dbzhjXJXivYXiyfD8" target="_blank"><i class="fas fa-share-alt"></i> Become a Referral Agent<br><small>Earn per referral</small></a>
+  <a href="https://forms.gle/8SGikcvSW2Z32Xfq8" target="_blank"><i class="fas fa-exchange-alt"></i> Manual Switching Request<br><small>Switch to cheapest network</small></a>
+  <a href="https://forms.gle/XMBQ4Egj2FxQWFLn6" target="_blank"><i class="fas fa-comments"></i> User Feedback & Testimony<br><small>Share your story</small></a>
+  <a href="https://forms.gle/YLMuCLiQjnbnzdWB8" target="_blank"><i class="fas fa-tools"></i> Report Issues & Support<br><small>We fix it fast</small></a>
+</div>
+
+<div class="countdown">⏳ <span id="timer">04:12:00</span> left!</div>
+<script>
+  function startTimer() {
+    let time = 4 * 3600 + 12 * 60;
+    const timer = setInterval(() => {
+      const hours = Math.floor(time / 3600);
+      const mins = Math.floor((time % 3600) / 60);
+      const secs = time % 60;
+      document.getElementById('timer').innerHTML = `${hours.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+      if (time-- <= 0) clearInterval(timer);
+    }, 1000);
+  }
+  startTimer();
+</script>
+
+<div class="counter">
+  <i class="fas fa-users"></i> <span id="switchers">1,234</span> Nigerians switched today!
+</div>
+<script>
+  setInterval(() => {
+    const count = 1234 + Math.floor(Math.random() * 10);
+    document.getElementById('switchers').textContent = count;
+  }, 30000);
+</script>
+
+<div class="faq">
+  <h2>FAQ + User Testimony</h2>
+  <ul>
+    <li><strong>How do I buy?</strong> — Click the WhatsApp or Flutterwave button.</li>
+    <li><strong>How cheap is it?</strong> — Up to 50% less than MTN, Airtel, Glo.</li>
+    <li><strong>User Testimonial:</strong><br><i>"Saved ₦3,500 this month! Qubit is LEGIT."</i> — Tunde (Lagos)</li>
+  </ul>
+</div>
+
+  </div>  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  <script>
+    document.addEventListener('mouseout', (e) => {
+      if (e.clientY < 0) {
+        Swal.fire({
+          title: 'Wait! Get 10% Off',
+          text: 'Enter your number for an exclusive deal:',
+          input: 'tel',
+          confirmButtonText: 'Send Me the Deal'
+        });
+      }
+    });
+  </script></body></html>
